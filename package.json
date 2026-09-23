@@ -9,6 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@huggingface/transformers": "^3.8.1",
+    "@ricky0123/vad-web": "^0.0.30",
     "next": "16.3.3",
     "react": "19.2.8",
     "react-dom": "19.2.8"
