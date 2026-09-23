@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Echo
 
-## Getting Started
+Plataforma de tradução em tempo real de texto e voz, desenvolvida com foco em comunicação multilíngue e expansão futura para recursos de acessibilidade.
 
-First, run the development server:
+## Sobre o projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O Echo é uma aplicação criada com o objetivo de facilitar a comunicação entre pessoas que falam idiomas diferentes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto surgiu inicialmente como uma proposta acadêmica e conquistou o 1º lugar em uma competição realizada em 2025. Em 2026, a ideia foi retomada e evoluída para uma primeira versão funcional.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Atualmente, o Echo permite realizar traduções de texto e utilizar entrada de áudio por microfone, buscando oferecer uma experiência de comunicação mais dinâmica e próxima do tempo real.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+A proposta de evolução do projeto inclui o desenvolvimento de novos recursos de acessibilidade e, principalmente, a futura integração com LIBRAS.
 
-## Learn More
+## Funcionalidades atuais
 
-To learn more about Next.js, take a look at the following resources:
+- Tradução de texto entre diferentes idiomas
+- Seleção de idioma de origem e destino
+- Entrada de áudio pelo microfone
+- Processamento de áudio no navegador
+- Tradução utilizando modelo de inteligência artificial
+- Interface web responsiva
+- Estrutura preparada para evolução do projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tecnologias utilizadas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Next.js
+- TypeScript
+- React
+- Tailwind CSS
+- NLLB-200
+- Transformers.js
+- WebAssembly
+- AudioWorklet
+- Web Audio API
 
-## Deploy on Vercel
+## Inteligência Artificial
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O Echo utiliza o modelo NLLB-200 para realizar traduções entre diferentes idiomas.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O processamento é integrado à aplicação web utilizando tecnologias compatíveis com execução no navegador, permitindo reduzir a dependência de serviços externos durante o processo de tradução.
+
+## Processamento de áudio
+
+A aplicação utiliza recursos da Web Audio API e AudioWorklet para captura e processamento de áudio diretamente no navegador.
+
+Essa estrutura serve como base para o desenvolvimento do modo de tradução por voz e futuras funcionalidades de comunicação em tempo real.
+
+## Estrutura do projeto
+
+```text
+Echo/
+├── public/
+├── src/
+│   ├── app/
+│   └── components/
+├── package.json
+├── package-lock.json
+├── next.config.ts
+├── tsconfig.json
+└── README.md
